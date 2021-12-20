@@ -37,7 +37,7 @@ function create() {
 }
 
 if ("webkitSpeechRecognition" in window) {
-    let recognition = new webkitSpeechRecognition();
+    let recognition = new window.webkitSpeechRecognition();
     let finalTranscript = '';
     recognition.continuous = true;
     recognition.interimResults = true;
