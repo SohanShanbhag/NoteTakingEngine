@@ -58,9 +58,11 @@ if ("webkitSpeechRecognition" in window) {
     };
 
     recognition.onresult = function (event) {
-        finalTranscript = event.results[0][0].transcript + ". ";
+        var transcript = event.results[0][0].transcript;
+        console.log(transcript);
 
-        document.querySelector("#script").innerHTML += finalTranscript;
+        document.getElementById("script").innerText = document.getElementById("script").innerHTML +" "+ transcript;
+
     }
 
     document.querySelector("#start").onclick = () => {
