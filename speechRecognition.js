@@ -39,8 +39,6 @@ function create() {
 if ("webkitSpeechRecognition" in window) {
     let recognition = new window.webkitSpeechRecognition();
     let finalTranscript = '';
-    recognition.continuous = true;
-    recognition.interimResults = true;
     recognition.lang = 'en-US';
     recognition.lang = document.querySelector("#select_dialect").value;
 
