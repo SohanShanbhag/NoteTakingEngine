@@ -15,8 +15,8 @@ function generateTxtFile(text) {
 function create() {
     Swal.fire({
         title: "Great!",
-        text: "Enter the name of the file you want to save it as:",
-        input: 'text',
+        
+        
         type: "success",
         confirmButtonText: "Awesome!",
         timer: 3000,
